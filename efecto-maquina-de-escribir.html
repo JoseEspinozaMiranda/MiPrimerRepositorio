@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: block;
+            font-family: monospace;
+            color: rgb(162, 6, 61);
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 12ch;
+
+            animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+            overflow: hidden;
+        }
+
+        @keyFrames typing {
+
+            from {
+                width: 0
+            }
+        }
+
+        @keyFrames blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <span>¡Hola mundo!</span>
+
+
+</body>
+
+</html>
